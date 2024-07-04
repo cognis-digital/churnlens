@@ -37,3 +37,4 @@
 2026-01-12T17:01:11  docs: clarify usage notes
 2026-05-21T12:18:18  test: add edge case
 2024-06-08T11:59:49  style(fixtures): add a --quiet mode
+2024-07-04T18:16:56  build(report): add type hints to the public API
