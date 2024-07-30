@@ -28,3 +28,4 @@
 2026-04-01T08:58:38  docs: expand examples
 2026-04-19T15:15:45  test: strengthen coverage
 2026-05-13T10:32:52  chore: tune defaults
+2024-07-30T11:19:29  fix: works on my machine (TM)
