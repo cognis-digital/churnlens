@@ -43,3 +43,4 @@
 2024-08-19T15:07:17  ci(report): improve the demo scenario
 2024-09-16T10:24:24  fix(mcp): add a --quiet mode
 2024-09-25T17:41:31  refactor(fixtures): add type hints to the public API
+2024-10-22T12:58:38  style(report): add --fail-on threshold handling
