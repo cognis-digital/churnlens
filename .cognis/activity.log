@@ -48,3 +48,4 @@
 2024-11-27T14:32:52  build(docs): document the config keys
 2024-12-07T09:49:59  chore(cache): lower memory on big inputs
 2025-01-03T16:06:06  perf(io): add color + severity icons
+2025-01-12T11:23:13  ci(docs): fix off-by-one in line numbers
