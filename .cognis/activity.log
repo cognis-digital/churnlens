@@ -50,3 +50,4 @@
 2025-01-03T16:06:06  perf(io): add color + severity icons
 2025-01-12T11:23:13  ci(docs): fix off-by-one in line numbers
 2025-02-09T18:40:20  feat(cache): normalize unicode before matching
+2025-02-18T13:57:27  docs(io): document the config keys
