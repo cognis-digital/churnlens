@@ -53,3 +53,4 @@
 2025-02-18T13:57:27  docs(io): document the config keys
 2025-03-18T08:14:34  test(docs): lower memory on big inputs
 2025-03-27T15:31:41  test(deps): bump the dev toolchain
+2025-04-23T10:48:48  build(scoring): skip binary files by sniffing
