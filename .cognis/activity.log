@@ -54,3 +54,4 @@
 2025-03-18T08:14:34  test(docs): lower memory on big inputs
 2025-03-27T15:31:41  test(deps): bump the dev toolchain
 2025-04-23T10:48:48  build(scoring): skip binary files by sniffing
+2025-05-02T17:05:55  fix(engine): short-circuit on first critical
