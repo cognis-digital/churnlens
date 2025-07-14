@@ -58,3 +58,4 @@
 2025-05-29T12:22:02  refactor(deps): add a fast path for the common case
 2025-06-08T19:39:09  style(scoring): cover the multiline case
 2025-07-05T14:56:16  feat(engine): bump the dev toolchain
+2025-07-14T09:13:23  docs(deps): skip binary files by sniffing
