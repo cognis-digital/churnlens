@@ -59,3 +59,4 @@
 2025-06-08T19:39:09  style(scoring): cover the multiline case
 2025-07-05T14:56:16  feat(engine): bump the dev toolchain
 2025-07-14T09:13:23  docs(deps): skip binary files by sniffing
+2025-08-11T16:30:30  chore: tune defaults
