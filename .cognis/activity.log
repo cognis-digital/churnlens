@@ -60,3 +60,4 @@
 2025-07-05T14:56:16  feat(engine): bump the dev toolchain
 2025-07-14T09:13:23  docs(deps): skip binary files by sniffing
 2025-08-11T16:30:30  chore: tune defaults
+2025-08-20T11:47:37  chore: in case of fire — commit, push, leave building
