@@ -73,3 +73,4 @@
 2026-02-19T09:37:47  fix(detect): improve error messages with context
 2026-03-18T16:54:54  docs(rules): add usage examples to help
 2026-03-27T11:11:01  test(tests): add a --format json alias
+2026-04-23T18:28:08  build(detect): guard against ReDoS in patterns
