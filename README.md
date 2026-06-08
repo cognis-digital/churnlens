@@ -36,9 +36,9 @@ own your SaaS metrics, no per-seat fee
 <a name="features"></a>
 ## Features
 
-- ✅ Todo
-- ✅ Fixme
-- ✅ Xxx
+- ✅ Parse Events
+- ✅ Load Events
+- ✅ Compute Report
 - ✅ Runs on Linux/macOS/Windows · Docker · devcontainer
 - ✅ Ports in Python, JavaScript, Go, and Rust (`ports/`)
 
