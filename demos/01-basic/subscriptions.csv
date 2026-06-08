@@ -1,0 +1,12 @@
+date,customer,event,mrr
+2026-01-05,acme,new,100
+2026-01-09,globex,new,50
+2026-01-15,initech,new,80
+2026-01-20,soylent,new,30
+2026-02-03,acme,upgrade,150
+2026-02-11,umbrella,new,120
+2026-02-18,soylent,churn,0
+2026-03-02,initech,downgrade,40
+2026-03-08,globex,churn,0
+2026-03-14,soylent,reactivation,45
+2026-03-22,umbrella,upgrade,140
