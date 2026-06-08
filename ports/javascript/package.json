@@ -1,0 +1,10 @@
+{
+  "name": "@cognis/churnlens",
+  "version": "0.2.0",
+  "description": "JavaScript port of churnlens (Cognis Neural Suite)",
+  "bin": {
+    "churnlens": "index.js"
+  },
+  "license": "LicenseRef-COCL-1.0",
+  "type": "module"
+}
