@@ -16,7 +16,7 @@
 </div>
 
 ```bash
-pip install cognis-churnlens
+pip install "git+https://github.com/cognis-digital/churnlens.git"
 churnlens scan .            # → prioritized findings in seconds
 ```
 
@@ -48,7 +48,7 @@ own your SaaS metrics, no per-seat fee
 ## Quick start
 
 ```bash
-pip install cognis-churnlens
+pip install "git+https://github.com/cognis-digital/churnlens.git"
 churnlens --version
 churnlens scan .                       # scan current project
 churnlens scan . --format json         # machine-readable
