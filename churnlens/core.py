@@ -33,7 +33,7 @@ import csv
 import io
 from dataclasses import dataclass, field, asdict
 from datetime import date
-from typing import Dict, List, Optional, Iterable
+from typing import Dict, List, Iterable
 
 VALID_EVENTS = {"new", "upgrade", "downgrade", "churn", "reactivation"}
 
