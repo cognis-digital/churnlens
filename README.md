@@ -20,6 +20,42 @@ pip install cognis-churnlens
 churnlens scan .            # → prioritized findings in seconds
 ```
 
+## Usage — step by step
+
+1. **Install:**
+
+   ```bash
+   pip install -e .
+   ```
+
+2. **Run a full metrics report** from a subscription-event CSV ledger with the `report` subcommand:
+
+   ```bash
+   churnlens report ledger.csv
+   ```
+
+   The report prints current MRR, ARR run-rate, active customers, average customer churn, and a per-month table (MRR end, net-new MRR, customer churn, net revenue churn, LTV).
+
+3. **Get the latest-month MRR movement** with the `mrr` subcommand — a breakdown of new / expansion / reactivation / contraction / churned MRR:
+
+   ```bash
+   churnlens mrr ledger.csv
+   ```
+
+4. **Read / use the output.** Both subcommands accept `--format json` for piping into dashboards and `--currency` to label amounts (default `USD`):
+
+   ```bash
+   churnlens report ledger.csv --format json --currency EUR
+   ```
+
+5. **Use it in automation** — recompute metrics on every ledger update and publish the JSON:
+
+   ```bash
+   churnlens report ledger.csv --format json > metrics.json
+   # feed metrics.json to your BI/dashboard pipeline
+   ```
+
+
 ## Contents
 
 - [Why churnlens?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
