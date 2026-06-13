@@ -20,6 +20,12 @@ pip install "git+https://github.com/cognis-digital/churnlens.git"
 churnlens scan .            # → prioritized findings in seconds
 ```
 
+<!-- cognis:layman:start -->
+## What is this?
+
+ChurnLens is a self-hosted tool that calculates the key financial metrics for subscription businesses — things like monthly recurring revenue (MRR), customer churn rate, and lifetime value (LTV). You give it a simple CSV file listing your subscription sign-ups, upgrades, cancellations, and plan changes, and it produces a month-by-month breakdown showing exactly how your revenue is growing or shrinking. It runs entirely on your own computer or server with no account, no third-party service, and no monthly fee — making it ideal for founders, finance teams, or developers who want full control over their SaaS metrics.
+<!-- cognis:layman:end -->
+
 ## Contents
 
 - [Why churnlens?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
@@ -45,6 +51,42 @@ own your SaaS metrics, no per-seat fee
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="quick-start"></a>
+<!-- cognis:install:start -->
+## Install
+
+`churnlens` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/churnlens/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/churnlens/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/churnlens.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/churnlens.git"  # uv
+pip install "git+https://github.com/cognis-digital/churnlens.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/churnlens.git
+cd churnlens && pip install .
+```
+
+Then run:
+```sh
+churnlens --help
+```
+<!-- cognis:install:end -->
+
 ## Quick start
 
 ```bash
@@ -151,18 +193,29 @@ Every push is verified end-to-end. Latest audit (2026-06-13):
 ```text
 tests        : 12 passed, 0 failed, 0 errored
 compile      : all modules parse
-cli          : C:\Python314\python.exe: No module named https
-package      : https
+cli          : churnlens --version OK
+package      : churnlens
 ```
 
 <details><summary>CLI surface (<code>--help</code>)</summary>
 
 ```text
-C:\Python314\python.exe: No module named https
+usage: churnlens [-h] [--version] {report,mrr} ...
+
+Self-hosted SaaS metrics: MRR, churn, LTV from a CSV ledger.
+
+positional arguments:
+  {report,mrr}
+    report      full per-month metrics report
+    mrr         latest-month MRR movement summary
+
+options:
+  -h, --help    show this help message and exit
+  --version     show program's version number and exit
 ```
 </details>
 
-Full machine-readable results: [`AUDIT.md`](AUDIT.md) · regenerate with `python -m https --help` + `pytest -q`.
+Full machine-readable results: [`AUDIT.md`](AUDIT.md) · regenerate with `python -m churnlens --help` + `pytest -q`.
 
 <div align="right"><a href="#top">↑ back to top</a></div>
 
