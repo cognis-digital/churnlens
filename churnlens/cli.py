@@ -106,8 +106,17 @@ def main(argv: Optional[List[str]] = None) -> int:
     except FileNotFoundError:
         print(f"error: ledger not found: {args.ledger}", file=sys.stderr)
         return 2
+    except PermissionError:
+        print(f"error: permission denied reading: {args.ledger}", file=sys.stderr)
+        return 2
+    except UnicodeDecodeError as exc:
+        print(f"error: cannot decode ledger (expected UTF-8): {exc}", file=sys.stderr)
+        return 1
     except ChurnLensError as exc:
         print(f"error: {exc}", file=sys.stderr)
+        return 1
+    except Exception as exc:  # noqa: BLE001
+        print(f"error: unexpected error: {exc}", file=sys.stderr)
         return 1
 
     if args.command == "report":
