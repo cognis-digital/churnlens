@@ -1,0 +1,14 @@
+$ churnlens-emit --help
+
+usage: churnlens [-h] [--version] {report,mrr} ...
+
+Self-hosted SaaS metrics: MRR, churn, LTV from a CSV ledger.
+
+positional arguments:
+  {report,mrr}
+    report      full per-month metrics report
+    mrr         latest-month MRR movement summary
+
+options:
+  -h, --help    show this help message and exit
+  --version     show program's version number and exit

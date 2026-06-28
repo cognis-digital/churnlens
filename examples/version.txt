@@ -1,0 +1,3 @@
+$ churnlens-emit --version
+
+churnlens 0.1.0

@@ -20,6 +20,64 @@ pip install cognis-churnlens
 churnlens scan .            # → prioritized findings in seconds
 ```
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+Real, reproducible output from the tool — runs offline:
+
+```console
+$ churnlens-emit --version
+churnlens 0.1.0
+```
+
+```console
+$ churnlens-emit --help
+usage: churnlens [-h] [--version] {report,mrr} ...
+
+Self-hosted SaaS metrics: MRR, churn, LTV from a CSV ledger.
+
+positional arguments:
+  {report,mrr}
+    report      full per-month metrics report
+    mrr         latest-month MRR movement summary
+
+options:
+  -h, --help    show this help message and exit
+  --version     show program's version number and exit
+```
+
+> Blocks above are real `churnlens` output — reproduce them from a clone.
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+"findings": [
+    {
+        "id": "123456",
+        "title": "Suspicious Network Traffic",
+        "description": "Potential malicious activity detected on network 192.168.1.100",
+        "created": "2023-02-20T14:30:00Z",
+        "updated": "2023-02-20T14:30:01Z",
+        "labels": ["network", "malware"],
+        "observables": [
+            {
+                "type": "ip-dst",
+                "value": "192.168.1.100"
+            },
+            {
+                "type": "domain-name",
+                "value": "example.com"
+            }
+        ]
+    }
+]
+}
+```
+
+<!-- cognis:example:end -->
+
 ## Usage — step by step
 
 1. **Install:**
